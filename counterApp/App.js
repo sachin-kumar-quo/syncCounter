@@ -8,7 +8,7 @@ export default App = () => {
   const socket = io('http://192.168.0.105:5000');
   useEffect(() => {
     socket.emit('connected1');
-  });
+  }, []);
 
   const sendStart = () => {
     console.log('hello');
